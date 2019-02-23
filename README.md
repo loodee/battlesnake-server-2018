@@ -1,20 +1,8 @@
-# The 2018 Official Game Server
+# Battlesnake-event
 
-[![BattleSnake 2018 Logo](./docs/images/logo-18.png)](https://www.battlesnake.io/)
 
-## [Event Information](https://www.battlesnake.io/)
 
-![Example Game Animation](./docs/images/game.gif)
-
-BattleSnake is an adaptation of the classic video game "Snake", where the player
-maneuvers a snake around the game board to collect food pellets, which makes the
-snake grow longer. The main objective is to collect as much food as as possible
-while avoiding obstacles like walls and snakes' body.
-
-In BattleSnake a number of snakes are pitted against each other and the last
-snake alive wins.
-
-## Competitors' Guide
+# Från officiella repot:
 
 ### Game Rules
 
@@ -315,52 +303,3 @@ docker run --rm -it -p 3000:3000 sendwithus/battlesnake-server
 You can then view the game server at <http://localhost:3000>.
 
 **NOTE**: If you are running your snake on localhost or on the same local machine where you're running the game server, you won't be able to reference it as `localhost` in the game setup UI because the game server docker container runs on its own network. What this means for you is that you will need to use your computer's IP address (something like `http://192.168.1.10:<port>`) as your snake URL in order to add it to a game and not `http://localhost:<port>`.
-
-### Compiling From Source
-
-#### Dependencies
-
-- [Erlang](https://www.erlang.org/downloads)
-- [Elixir](http://elixir-lang.org/install.html)
-- [NPM](http://blog.npmjs.org/post/85484771375/how-to-install-npm)
-- [Yarn](https://yarnpkg.com/lang/en/docs/install)
-
-#### OS X/macOS
-
-```sh
-brew update && brew install erlang elixir nodejs yarn
-```
-
-#### Linux
-
-You should manage Erlang through [evm](https://github.com/robisonsantos/evm)
-and Elixir through [kiex](https://github.com/taylor/kiex).
-
-```sh
-git clone git@github.com:sendwithus/battlesnake-server.git`
-cd battlesnake-server
-
-mix do local.hex --force, local.rebar
-mix do deps.get, deps.compile
-mix do ecto.create, ecto.migrate
-
-yarn install
-
-mix phx.server
-```
-
-## Testing
-
-### End to End Tests
-
-```sh
-yarn cypress:open
-```
-
-### Unit Tests
-
-```sh
-mix test
-```
-
-Spotted an inaccuracy in the document, think they suck, or have a suggestion on how to make it better? Open an [issue](https://github.com/sendwithus/battlesnake-server/issues), or even better submit a [PR](https://github.com/sendwithus/battlesnake-server/pulls)!
