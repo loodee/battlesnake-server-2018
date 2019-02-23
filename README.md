@@ -1,5 +1,13 @@
 # Battlesnake-event
 
+## "Starter snakes", kodskelett till ormar
+
+* Python: https://github.com/battlesnakeio/starter-snake-python
+* Java: https://github.com/battlesnakeio/starter-snake-java
+* NodeJS: https://github.com/battlesnakeio/starter-snake-node
+
+Instruktioner för hur ni startar ormarna finns på respektive sida.
+
 ## Köra battlesnake-server i Docker container
 
 Spelservern ("arenan") kan köras genom docker, vilket gör det smidigt att testa 
