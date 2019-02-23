@@ -1,5 +1,9 @@
 # Battlesnake-event
 
+Mer dokumentation finns på <https://docs.battlesnake.io/>.
+
+API 2017: <https://stembolthq.github.io/battle_snake/>
+
 ## "Starter snakes", kodskelett till ormar
 
 * Python: https://github.com/battlesnakeio/starter-snake-python
@@ -65,7 +69,7 @@ er orm-AI:
 ![Connect to GitHub repository](./monaden-imgs/heroku/github-connect-3.png)
 
 Om ni vill kan ni också aktivera "automatic deploys". Heroku bygger då er app 
-varje gång ni pushar något till ert GitHub-repo (går även att bygga manuaellt):
+varje gång ni pushar något till ert GitHub-repo (går även att bygga manuellt):
 
 ![Autodeploy on Heroku](./monaden-imgs/heroku/autodeploy-enable.png)
 
