@@ -6,7 +6,8 @@
 * Java: https://github.com/battlesnakeio/starter-snake-java
 * NodeJS: https://github.com/battlesnakeio/starter-snake-node
 
-Instruktioner för hur ni startar ormarna finns på respektive sida.
+Instruktioner för hur ni installerar och startar ormarna finns på respektive 
+sida.
 
 ## Köra battlesnake-server i Docker container
 
@@ -38,6 +39,43 @@ så skriver vi följande i spelserverns URL-fält för ormar:
 `http://192.168.1.131:8080`.
 
 ![UI Snake entry](./ui-entry.png)
+
+## Skapa konto och GitHub-anslutning på Heroku
+
+Börja med att skapa ett konto på [heroku.com](https://www.heroku.com/).
+
+Välj "Create new app":
+
+![Create new app](./monaden-imgs/heroku/app-creation-1.png)
+
+Skriv in ett namn och välj region:
+
+![App name](./monaden-imgs/heroku/app-creation-2.png)
+
+Under "Deployment method", välj "GitHub" och sedan "Connect to GitHub", 
+godkänn auktorisering:
+
+![Connect to GitHub account](./monaden-imgs/heroku/github-connect-1.png)
+
+![Authorize Heroku](./monaden-imgs/heroku/github-connect-2.png)
+
+När kontot är anslutet till GitHub kan ni ansluta appen till ert repo för 
+er orm-AI:
+
+![Connect to GitHub repository](./monaden-imgs/heroku/github-connect-3.png)
+
+Om ni vill kan ni också aktivera "automatic deploys". Heroku bygger då er app 
+varje gång ni pushar något till ert GitHub-repo (går även att bygga manuaellt):
+
+![Autodeploy on Heroku](./monaden-imgs/heroku/autodeploy-enable.png)
+
+Till slut kan ni nu klicka på "Open app" i övre högra hörnet för att få URL:en 
+till er orm. Det är från dessa URL:er som vi kommer att hämta ormarna för att 
+tävla mot varandra:
+
+![Open app](./monaden-imgs/heroku/open-app.png)
+
+![Heroku app URL](./monaden-imgs/heroku/snake-url.png)
 
 # Nedanstående kommer från officiella repot:
 
