@@ -1,8 +1,36 @@
 # Battlesnake-event
 
+## Köra battlesnake-server i Docker container
 
+Spelservern ("arenan") kan köras genom docker, vilket gör det smidigt att testa 
+ormar.
 
-# Från officiella repot:
+Installera Docker först, och kör sedan:
+
+```
+docker pull
+docker run --rm -it -p 3000:3000 sendwithus/battlesnake-server
+```
+
+Servern kan sedan nås via <http://localhost:3000>.
+
+Notera att om ni vill testa er orm som ni kör lokalt, kan ni ej referera till 
+den genom `localhost` i UI:et (pga. Docker). Istället måste ni referera till 
+datorns IP-adress, något i stil med `http://192.168.1.131:<port>`, där `<port>`
+syftar på den port som er orm lyssnar på (t.ex. 8080).
+
+IP-adressen kan ni få genom att t.ex. köra `ip addr`. För min dator, på 
+Monadens nätverk ger t.ex `ip addr | grep 192` följande output:
+```
+inet 192.168.1.131/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp2s0
+```
+Här är `192.168.1.131` adressen, och om porten som ormen lyssnar på är `8080` 
+så skriver vi följande i spelserverns URL-fält för ormar:
+`http://192.168.1.131:8080`.
+
+![UI Snake entry](./ui-entry.png)
+
+# Nedanstående kommer från officiella repot:
 
 ### Game Rules
 
