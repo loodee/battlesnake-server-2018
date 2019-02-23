@@ -23,9 +23,10 @@ docker run --rm -it -p 3000:3000 sendwithus/battlesnake-server
 Servern kan sedan nås via <http://localhost:3000>.
 
 Notera att om ni vill testa er orm som ni kör lokalt, kan ni ej referera till 
-den genom `localhost` i UI:et (pga. Docker). Istället måste ni referera till 
-datorns IP-adress, något i stil med `http://192.168.1.131:<port>`, där `<port>`
-syftar på den port som er orm lyssnar på (t.ex. 8080).
+den genom `localhost` i UI:et (pga. Docker). Dvs. kommer 
+`http://localhost:<port>` ej att fungera; istället måste ni referera till 
+datorns IP-adress, något i stil med `http://192.168.1.131:<port>`, där 
+`<port>` syftar på den port som er orm lyssnar på (t.ex. 8080).
 
 IP-adressen kan ni få genom att t.ex. köra `ip addr`. För min dator, på 
 Monadens nätverk ger t.ex `ip addr | grep 192` följande output:
