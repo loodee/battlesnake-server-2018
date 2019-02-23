@@ -38,7 +38,7 @@ Här är `192.168.1.131` adressen, och om porten som ormen lyssnar på är `8080
 så skriver vi följande i spelserverns URL-fält för ormar:
 `http://192.168.1.131:8080`.
 
-![UI Snake entry](./ui-entry.png)
+![UI Snake entry](./monaden-imgs/docker/ui-entry.png)
 
 ## Skapa konto och GitHub-anslutning på Heroku
 
