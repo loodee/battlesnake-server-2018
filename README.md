@@ -29,11 +29,9 @@ sida.
 Spelservern ("arenan") kan köras genom Docker, vilket gör det smidigt att 
 testa era ormar.
 
-[Docker för Windows/macOS]
-(https://www.docker.com/products/docker-desktop)
+[Docker för Windows/macOS](https://www.docker.com/products/docker-desktop)
 
-[Docker för Ubuntu (versioner för andra distributioner finns också)]
-(https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+[Docker för Ubuntu (versioner för andra distributioner finns också)](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 Installera Docker först, och kör sedan:
 
