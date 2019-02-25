@@ -5,6 +5,16 @@ virtuell maskin med Linux, då testande har visat sig fungera bäst där.
 macOS bör också fungera, men är ej testat. Windows är krångligt, undvik 
 om möjligt._
 
+### Hittills testade konfigurationer för utveckling
+
+Bättre fungerande konfigurationer:
+* Ubuntu 18: _Fungerande (Docker, Python)_
+* Ubuntu 18 i en virtuell maskin på Windows 10 Professional: _Fungerande (Docker, Python)_
+
+Sämre/ej fungerande konfigurationer:
+* :x: Windows 10 med Docker Toolbox: _Ännu ej fått fungerande._
+* :x: Windows Subsystem for Linux: _Docker kan ej köras i WSL. Python-orm fungerar._
+
 Mer dokumentation finns på <https://docs.battlesnake.io/>.
 **Notera:** API-dokumentationen på denna sida kanske inte stämmer helt 
 överens med versionen på den server vi köra.
