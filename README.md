@@ -10,6 +10,7 @@ om möjligt._
 Bättre fungerande konfigurationer:
 * Ubuntu 18: _Fungerande (Docker, Python)_
 * Ubuntu 18 i en virtuell maskin på Windows 10 Professional: _Fungerande (Docker, Python)_
+* macOS Mojave 10.14.3: _Fungerande (Docker, Python, Java)_
 
 Sämre/ej fungerande konfigurationer:
 * :x: Windows 10 med Docker Toolbox: _Ännu ej fått fungerande._
@@ -59,8 +60,8 @@ den genom `localhost` i UI:et (pga. Docker). Dvs. kommer
 datorns IP-adress, något i stil med `http://192.168.1.131:<port>`, där 
 `<port>` syftar på den port som er orm lyssnar på (t.ex. 8080).
 
-IP-adressen kan ni få genom att t.ex. köra `ip addr`. För min dator, på 
-Monadens nätverk ger t.ex `ip addr | grep 192` följande output:
+IP-adressen kan ni få genom att t.ex. köra `ip addr` (`ifconfig` på macOS). För min dator, på 
+Monadens nätverk ger t.ex `ip addr | grep 192` följande utskrift:
 ```
 inet 192.168.1.131/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp2s0
 ```
