@@ -37,7 +37,8 @@ docker pull sendwithus/battlesnake-server
 docker run --rm -it -p 3000:3000 sendwithus/battlesnake-server
 ```
 
-Servern kan sedan nås via <http://localhost:3000>.
+Servern kan sedan nås via <http://localhost:3000>, eller om ni kör Docker 
+Toolbox, <http://192.168.99.100:3000>
 
 Notera att om ni vill testa er orm som ni kör lokalt, kan ni ej referera till 
 den genom `localhost` i UI:et (pga. Docker). Dvs. kommer 
