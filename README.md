@@ -1,8 +1,15 @@
 # Battlesnake-event
 
-Mer dokumentation finns på <https://docs.battlesnake.io/>.
+_En fungerande utvecklingsmiljö ska gå att ordna oavsett om ni kör Windows, macOS, 
+eller någon Linux-distribution. Vi rekommenderar dock Linux om möjligheten finns, 
+då det har gått lättast och mest felfritt där, då vi har testat.__
 
-API 2017: <https://stembolthq.github.io/battle_snake/>
+Mer dokumentation finns på <https://docs.battlesnake.io/>.
+**Notera:** API-dokumentationen på denna sida kanske inte stämmer helt 
+överens med versionen på den server vi köra.
+
+API 2017 (bör fungera smidigt med denna version av servern):
+<https://stembolthq.github.io/battle_snake/>
 
 ## "Starter snakes", kodskelett till ormar
 
@@ -17,6 +24,9 @@ sida.
 
 Spelservern ("arenan") kan köras genom docker, vilket gör det smidigt att testa 
 ormar.
+
+_Om ni använder Windows och inte har Windows 10 Professional, använd_ Docker 
+Toolbox _istället._
 
 Installera Docker först, och kör sedan:
 
