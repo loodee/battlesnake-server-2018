@@ -26,9 +26,14 @@ sida.
 
 ## Köra battlesnake-server i Docker container
 
-Spelservern ("arenan") kan köras genom 
-[Docker](https://www.docker.com/products/docker-desktop), 
-vilket gör det smidigt att testa era ormar.
+Spelservern ("arenan") kan köras genom Docker, vilket gör det smidigt att 
+testa era ormar.
+
+[Docker för Windows/macOS]
+(https://www.docker.com/products/docker-desktop)
+
+[Docker för Ubuntu (versioner för andra distributioner finns också)]
+(https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 Installera Docker först, och kör sedan:
 
