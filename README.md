@@ -1,15 +1,15 @@
 # Battlesnake-event
 
-_Vi rekommenderar att ni använder någon Linux-distribution, eller en 
+_Vi rekommenderar starkt att ni använder någon Linux-distribution, eller en 
 virtuell maskin med Linux, då testande har visat sig fungera bäst där.
-macOS bör också fungera, men är ej testat. Windows är krångligt, undvik 
-om möjligt._
+macOS bör också fungera. Windows är däremot ej fungerande i nuläget (fungerar 
+eventuellt med Windows 10 Professional, men ej testat)._
 
 ### Hittills testade konfigurationer för utveckling
 
 Bättre fungerande konfigurationer:
-* Ubuntu 18: _Fungerande (Docker, Python)_
-* Ubuntu 18 i en virtuell maskin på Windows 10 Professional: _Fungerande (Docker, Python)_
+* Ubuntu 18: _Fungerande (Docker, Python, Java)_
+* Ubuntu 18 i en virtuell maskin på Windows 10 Professional: _Fungerande (Docker, Python, Java)_
 * macOS Mojave 10.14.3: _Fungerande (Docker, Python, Java)_
 
 Sämre/ej fungerande konfigurationer:
