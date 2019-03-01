@@ -40,19 +40,35 @@ sida.
 Spelservern ("arenan") kan köras genom Docker, vilket gör det smidigt att 
 testa era ormar.
 
-[Docker för Windows/macOS](https://www.docker.com/products/docker-desktop)
+### Installera Docker (Ubuntu)
 
-[Docker för Ubuntu (versioner för andra distributioner finns också)](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+Senaste versionen av Docker Community Edition finns 
+[här](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
 
-Installera Docker först, och kör sedan:
+En äldre (men fungerande) version finns också i repot:
+
+```
+sudo apt install docker.io
+```
+
+### Installera Docker (macOS)
+
+Docker Desktop finns att ladda ned 
+[här](https://www.docker.com/products/docker-desktop).
+
+### Hämta och kör docker-container med server
+
+Testa om Docker installerats korrekt genom att skriva `docker --version` 
+i terminalen.
+
+För att sedan hämta Docker-containern med servern på, kör följande:
 
 ```
 docker pull sendwithus/battlesnake-server
 docker run --rm -it -p 3000:3000 sendwithus/battlesnake-server
 ```
 
-Servern kan sedan nås via <http://localhost:3000>, eller om ni kör Docker 
-Toolbox, <http://192.168.99.100:3000>
+Servern kan sedan nås via <http://localhost:3000>.
 
 Notera att om ni vill testa er orm som ni kör lokalt, kan ni ej referera till 
 den genom `localhost` i UI:et (pga. Docker). Dvs. kommer 
@@ -60,7 +76,7 @@ den genom `localhost` i UI:et (pga. Docker). Dvs. kommer
 datorns IP-adress, något i stil med `http://192.168.1.131:<port>`, där 
 `<port>` syftar på den port som er orm lyssnar på (t.ex. 8080).
 
-IP-adressen kan ni få genom att t.ex. köra `ip addr` (`ifconfig` på macOS). För min dator, på 
+IP-adressen kan ni få genom att t.ex. köra `ip addr`. För min dator, på 
 Monadens nätverk ger t.ex `ip addr | grep 192` följande utskrift:
 ```
 inet 192.168.1.131/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp2s0
