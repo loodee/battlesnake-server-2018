@@ -95,9 +95,13 @@ Välj "Create new app":
 
 ![Create new app](./monaden-imgs/heroku/app-creation-1.png)
 
+---
+
 Skriv in ett namn och välj region:
 
 ![App name](./monaden-imgs/heroku/app-creation-2.png)
+
+---
 
 Under "Deployment method", välj "GitHub" och sedan "Connect to GitHub", 
 godkänn auktorisering:
@@ -106,15 +110,14 @@ godkänn auktorisering:
 
 ![Authorize Heroku](./monaden-imgs/heroku/github-connect-2.png)
 
+---
+
 När kontot är anslutet till GitHub kan ni ansluta appen till ert repo för 
 er orm-AI:
 
 ![Connect to GitHub repository](./monaden-imgs/heroku/github-connect-3.png)
 
-Om ni vill kan ni också aktivera "automatic deploys". Heroku bygger då er app 
-varje gång ni pushar något till ert GitHub-repo (går även att bygga manuellt):
-
-![Autodeploy on Heroku](./monaden-imgs/heroku/autodeploy-enable.png)
+---
 
 Till slut kan ni låta Heroku bygga er app under "Manual deploy", och sedan 
 klicka på "Open app" i övre högra hörnet för att få URL:en till er orm. Det 
