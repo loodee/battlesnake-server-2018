@@ -87,6 +87,9 @@ så skriver vi följande i spelserverns URL-fält för ormar:
 
 ![UI Snake entry](./monaden-imgs/docker/ui-entry.png)
 
+Om ni vill köra flera ormar samtidigt (för testning), glöm inte att ge dem 
+olika portar att lyssna på!
+
 ## Skapa konto och GitHub-anslutning på Heroku
 
 Börja med att skapa ett konto på [heroku.com](https://www.heroku.com/).
