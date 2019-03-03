@@ -18,7 +18,8 @@ Sämre/ej fungerande konfigurationer:
 
 Mer dokumentation finns på <https://docs.battlesnake.io/>.
 **Notera:** API-dokumentationen på denna sida kanske inte stämmer helt 
-överens med versionen på den server vi köra.
+överens med versionen på den server vi köra, då den gäller främst
+2019-versionen av BattleSnake.
 
 API 2017 (bör fungera smidigt med denna version av servern):
 <https://stembolthq.github.io/battle_snake/>
@@ -28,9 +29,15 @@ från originalrepot).
 
 ## "Starter snakes", kodskelett till ormar
 
+Dessa bör sköta det mesta av "boilerplate"-arbetet åt er, t.ex. gällande 
+respons för `/start` och `/end` requests, och ger oftast någon sorts 
+startpunkt för respons till `/move` requests (som får ormen att förflytta 
+sig).
+
 * Python: https://github.com/battlesnakeio/starter-snake-python
 * Java: https://github.com/battlesnakeio/starter-snake-java
 * NodeJS: https://github.com/battlesnakeio/starter-snake-node
+* Haskell: https://github.com/Rewbert/starter-snake-haskell
 
 Instruktioner för hur ni installerar och startar ormarna finns på respektive 
 sida.
@@ -76,11 +83,13 @@ den genom `localhost` i UI:et (pga. Docker). Dvs. kommer
 datorns IP-adress, något i stil med `http://192.168.1.131:<port>`, där 
 `<port>` syftar på den port som er orm lyssnar på (t.ex. 8080).
 
-IP-adressen kan ni få genom att t.ex. köra `ip addr`. För min dator, på 
-Monadens nätverk ger t.ex `ip addr | grep 192` följande utskrift:
+IP-adressen kan ni få genom att t.ex. köra `ip addr` eller `ifconfig`. 
+För min dator, på Monadens nätverk, ger t.ex `ip addr | grep 192` 
+följande utskrift:
 ```
 inet 192.168.1.131/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp2s0
 ```
+
 Här är `192.168.1.131` adressen, och om porten som ormen lyssnar på är `8080` 
 så skriver vi följande i spelserverns URL-fält för ormar:
 `http://192.168.1.131:8080`.
