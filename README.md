@@ -68,7 +68,8 @@ Docker Desktop finns att ladda ned
 Testa om Docker installerats korrekt genom att skriva `docker --version` 
 i terminalen.
 
-För att sedan hämta Docker-containern med servern på, kör följande:
+För att sedan hämta Docker-containern med servern på, kör följande
+(kan kräva att du kör kommandon med `sudo`):
 
 ```
 docker pull sendwithus/battlesnake-server
