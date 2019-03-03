@@ -68,12 +68,11 @@ Docker Desktop finns att ladda ned
 Testa om Docker installerats korrekt genom att skriva `docker --version` 
 i terminalen.
 
-För att sedan hämta Docker-containern med servern på, kör följande
-(kan kräva att du kör kommandon med `sudo`):
+För att sedan hämta Docker-containern med servern på, kör:
 
 ```
-docker pull sendwithus/battlesnake-server
-docker run --rm -it -p 3000:3000 sendwithus/battlesnake-server
+sudo docker pull sendwithus/battlesnake-server
+sudo docker run --rm -it -p 3000:3000 sendwithus/battlesnake-server
 ```
 
 Servern kan sedan nås via <http://localhost:3000>.
