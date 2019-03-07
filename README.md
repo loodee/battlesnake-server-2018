@@ -16,8 +16,6 @@ Sämre/ej fungerande konfigurationer:
 * :x: Windows 10 med Docker Toolbox: _Ännu ej fått fungerande._
 * :x: Windows Subsystem for Linux: _Docker kan ej köras i WSL. Python-orm fungerar._
 
-## API 2017 (bör fungera smidigt med denna version av servern): <https://stembolthq.github.io/battle_snake/>
-
 En del dokumentation finns även längre ner i denna README (i den del 
 från originalrepot).
 
